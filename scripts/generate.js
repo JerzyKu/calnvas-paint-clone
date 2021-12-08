@@ -35,6 +35,13 @@ new_ele.addEventListener('click', () =>{clear_canvas()})
 new_ele.classList.add('big_button');
 tools.append(new_ele)
 
+//generate size button 
+new_ele = document.createElement('select')
+new_ele.id = 'marker_size'
+new_ele.addEventListener('change', () =>{clear_canvas()})
+new_ele.classList.add('big_button');
+tools.append(new_ele)
+
 
 //generate color button 
 colors = ['red','orange','yellow','green','blue','purple','pink','white','gray','brown','black']

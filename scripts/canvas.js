@@ -53,3 +53,10 @@ function clear_canvas () {
     context.fillStyle = 'white';
     context.fillRect(0, 0, myPics.width, myPics.height);
 }
+
+
+
+
+var img = new Image();   // Create new img element
+img.src = './scripts/download.png';
+context.drawImage(img, 10, 10);
