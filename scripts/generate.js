@@ -38,8 +38,13 @@ tools.append(new_ele)
 //generate size button 
 new_ele = document.createElement('select')
 new_ele.id = 'marker_size'
-new_ele.addEventListener('change', () =>{clear_canvas()})
+// new_ele.addEventListener('change', () =>{clear_canvas()})
 new_ele.classList.add('big_button');
+new_ele.classList.add('size_selector');
+new_ele.addEventListener('change',() => {
+    LINE_WIDTH = document.querySelector('#marker_size').value
+    new_ele.style.fontSize = document.querySelector('#marker_size').value
+})
 tools.append(new_ele)
 
 

@@ -8,8 +8,7 @@ let LINE_WIDTH = 5
 const myPics = document.getElementById('main_canvas');
 const context = myPics.getContext('2d');
 
-clear_canvas()
-
+window.onload = clear_canvas
 
 context.lineWidth = LINE_WIDTH
 // event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
@@ -52,11 +51,12 @@ function drawLine(context, x1, y1, x2, y2) {
 function clear_canvas () {
     context.fillStyle = 'white';
     context.fillRect(0, 0, myPics.width, myPics.height);
+    alert("clear canvas")
 }
 
 
 
 
-var img = new Image();   // Create new img element
-img.src = './scripts/download.png';
-context.drawImage(img, 10, 10);
+// var img = new Image();   // Create new img element
+// img.src = './scripts/download.png';
+// context.drawImage(img, 10, 10);
